@@ -1,0 +1,15 @@
+name: 'Tips Action'
+
+description: 'Post a random tip to the specified Slack channel'
+
+outputs:
+  random-number:
+    description: "Random tip"
+    value: ${{ steps.random-tip.outputs.tip }}
+
+runs:
+  using: "composite"
+  steps:
+    - id: random-tip
+      run: echo "::set-output name=tip::$(${{ github.action_path }}/file-picker.sh)"
+      shell: bash
