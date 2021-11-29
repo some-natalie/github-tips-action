@@ -8,16 +8,16 @@ jobs:
     name: Pick and post a random tip to Slack
     steps:
       - uses: actions/checkout@v2
-      - id: tipname
+      - id: random-tip
         uses: ./
       - name: test
-        run: echo ${{ steps.tipname.outputs.tip }}
+        run: echo ${{ steps.random-tip.outputs.tip }}
         shell: bash
       - name: Send custom JSON data to Slack workflow
         id: slack
         uses: slackapi/slack-github-action@v1.16.0
         with:
-          payload: "{\"blocks\":[${{ steps.tipname.outputs.tip }}]}"
+          payload: "{\"blocks\":[${{ steps.random-tip.outputs.tip }}]}"
         env:
           SLACK_WEBHOOK_URL: ${{ secrets.WEBHOOK_URL }}
           SLACK_WEBHOOK_TYPE: INCOMING_WEBHOOK

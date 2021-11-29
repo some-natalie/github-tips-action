@@ -11,5 +11,8 @@ runs:
   using: "composite"
   steps:
     - id: random-tip
-      run: ${{ github.action_path }}/tip-picker.sh
+      run: |
+        tipname=$(jq -r 'keys[]' tips.json | shuf | head -n 1)
+        tip=$(jq -r ."\"$tipname\"" tips.json)
+        echo "::set-output name=tip::$(echo $tip)"
       shell: bash
