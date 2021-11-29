@@ -13,6 +13,8 @@ runs:
     - id: random-tip
       run: |
         tipname=$(jq -r 'keys[]' tips.json | shuf | head -n 1)
+        echo $tipname
         tip=$(jq -r ."\"$tipname\"" tips.json)
+        echo $tip
         echo "::set-output name=tip::$(echo $tip)"
       shell: bash
