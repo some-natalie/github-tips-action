@@ -5,12 +5,12 @@ description: 'Post a random tip to the specified Slack channel'
 outputs:
   random-tip:
     description: "Random tip"
-    value: ${{ steps.random-tip.outputs.tip }}
+    value: ${{ steps.random-message.outputs.tip }}
 
 runs:
   using: "composite"
   steps:
-    - id: random-tip
+    - id: random-message
       run: |
         tipname=$(jq -r 'keys[]' tips.json | shuf | head -n 1)
         echo $tipname
