@@ -11,5 +11,5 @@ runs:
   using: "composite"
   steps:
     - id: random-tip
-      run: echo "::set-output name=tip::$(${{ github.action_path }}/tip-picker.sh)"
+      run: ${{ github.action_path }}/tip-picker.sh
       shell: bash

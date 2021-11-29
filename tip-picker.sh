@@ -4,4 +4,5 @@
 tipname=$(jq -r 'keys[]' tips.json | shuf | head -n 1)
 
 # Print that key's value as the tip
-jq -r ."\"$tipname\"" tips.json
+tip=$(jq -r ."\"$tipname\"" tips.json)
+echo "::set-output name=tip::$(echo $tip)"
