@@ -3,7 +3,7 @@ name: 'Tips Action'
 description: 'Post a random tip to the specified Slack channel'
 
 outputs:
-  random-number:
+  random-tip:
     description: "Random tip"
     value: ${{ steps.random-tip.outputs.tip }}
 
