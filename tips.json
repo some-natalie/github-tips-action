@@ -1,0 +1,64 @@
+{
+	"fuzzy-finder": [
+		{
+			"type": "header",
+			"text": {
+				"type": "plain_text",
+				"text": ":open_file_folder: Finding Files in Repositories"
+			}
+		},
+		{
+			"type": "divider"
+		},
+		{
+			"type": "section",
+			"text": {
+				"type": "mrkdwn",
+				"text": "Did you know GitHub has a fuzzy finder?  Press `t` in any repository to search for files by name.  Watch it in action in the GIF below and find out more <https://github.blog/2011-02-10-introducing-the-file-finder/|here>!"
+			}
+		},
+		{
+			"type": "image",
+			"image_url": "https://i1.wp.com/user-images.githubusercontent.com/121322/78818953-5105be00-798a-11ea-9f48-5626b0f7cb58.gif?ssl=1",
+			"alt_text": "Fuzzy file finder in action"
+		}
+	],
+	"gfm-syntax-highlighting": [
+		{
+			"type": "header",
+			"text": {
+				"type": "plain_text",
+				"text": ":memo: Syntax highlighting in Markdown"
+			}
+		},
+		{
+			"type": "divider"
+		},
+		{
+			"type": "section",
+			"text": {
+				"type": "mrkdwn",
+				"text": "GitHub-flavored markdown can highlight the syntax of most common languages.  Tell GitHub what language it is by using ` ```language ` in the block.  Here's an example using Ruby:"
+			}
+		},
+		{
+			"type": "section",
+			"text": {
+				"type": "mrkdwn",
+				"text": "``` ```ruby\nrequire 'redcarpet'\nmarkdown = Redcarpet.new(\"Hello World!\")\nputs markdown.to_html\n``````"
+			}
+		},
+		{
+			"type": "image",
+			"image_url": "https://docs.github.com/assets/images/help/writing/code-block-syntax-highlighting-rendered.png",
+			"alt_text": "Markdown syntax highlighting"
+		},
+		{
+			"type": "section",
+			"text": {
+				"type": "mrkdwn",
+				"text": "We use <https://github.com/github/linguist|Linguist> to perform language detection and to select <https://github.com/github/linguist/blob/master/vendor/README.md|third-party grammars> for syntax highlighting. You can find out which keywords are valid in <https://github.com/github/linguist/blob/master/lib/linguist/languages.yml|the languages YAML file>."
+			}
+		}
+	]
+}

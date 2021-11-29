@@ -1,3 +1,0 @@
-:open_file_folder: *Finding Files in Repositories*
-
-Did you know GitHub has a fuzzy finder?  Press `t` in any repository to search for files by name.

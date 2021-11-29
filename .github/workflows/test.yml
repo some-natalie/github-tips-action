@@ -1,0 +1,20 @@
+name: Post a random tip to Slack
+
+on: workflow_dispatch
+
+jobs:
+  post-tip:
+    runs-on: ubuntu-latest
+    name: Pick and post a random tip to Slack
+    steps:
+      - uses: actions/checkout@v2
+      - id: tipname
+        uses: ./
+      - name: Send custom JSON data to Slack workflow
+        id: slack
+        uses: slackapi/slack-github-action@v1.16.0
+        with:
+          payload: "{\"blocks\":[${{ steps.tipname.outputs.random-tip }}]}"
+        env:
+          SLACK_WEBHOOK_URL: ${{ secrets.WEBHOOK_URL }}
+          SLACK_WEBHOOK_TYPE: INCOMING_WEBHOOK
