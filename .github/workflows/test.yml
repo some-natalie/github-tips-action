@@ -11,7 +11,7 @@ jobs:
       - id: tipname
         uses: ./
       - name: test
-        run: echo ${{ steps.tipname.outputs.tip }}
+        run: echo tip ${{ steps.tipname.outputs.tip }}
         shell: bash
       - name: Send custom JSON data to Slack workflow
         id: slack
