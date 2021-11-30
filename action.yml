@@ -2,6 +2,10 @@ name: 'Tips Action'
 
 description: 'Post a random tip to the specified Slack channel'
 
+branding:
+  icon: 'info'
+  color: 'blue'
+
 outputs:
   random-tip:
     description: "Random tip"
