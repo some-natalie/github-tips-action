@@ -22,7 +22,7 @@ jobs:
         id: slack
         uses: slackapi/slack-github-action@v1.16.0
         with:
-          payload: "{\"blocks\":[${{ steps.pick-tip.outputs.tip }}]}"
+          payload: "{\"blocks\":${{ steps.pick-tip.outputs.tip }}}"
         env:
           SLACK_WEBHOOK_URL: ${{ secrets.WEBHOOK_URL }}
           SLACK_WEBHOOK_TYPE: INCOMING_WEBHOOK
