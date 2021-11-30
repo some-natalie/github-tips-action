@@ -16,7 +16,7 @@ jobs:
 
       - name: Pick a random GitHub tip
         id: pick-tip
-        uses: ./
+        uses: some-natalie/github-tips-action@v0.0.1
 
       - name: Send custom JSON data to Slack workflow
         id: slack
