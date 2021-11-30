@@ -1,4 +1,4 @@
-FROM alpine:latest
+FROM alpine:3.14
 
 # Install the things we need
 RUN apk add --update --no-cache curl jq bash
