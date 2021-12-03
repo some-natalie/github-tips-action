@@ -112,5 +112,44 @@
 				"text": "You can link a pull request to an issue by using a supported keyword in the pull request's description or in a commit message (please note that the pull request must be on the default branch).\n\n- `close` or `closes` or `closed`\n- `fix` or `fixes` or `fixed`\n- `resolve` or `resolves` or `resolved`\n\nIf you use a keyword to reference a pull request comment in another pull request, the pull requests will be linked. Merging the referencing pull request will also close the referenced pull request.\n\nThe syntax for closing keywords depends on whether the issue is in the same repository as the pull request.\n\n- Issue in the same repository `Closes #10` \n- Issue in a different repository `Fixes octo-org/octo-repo#100`\n- Multiple issues use full syntax for each issue `Resolves #10, resolves #123, resolves octo-org/octo-repo#100`\n\nOnly manually linked pull requests can be manually unlinked. To unlink an issue that you linked using a keyword, you must edit the pull request description to remove the keyword.\n\nYou can also use closing keywords in a commit message. The issue will be closed when you merge the commit into the default branch, but the pull request that contains the commit will not be listed as a linked pull request."
 			}
 		}
+	],
+	"git-blame": [
+		{
+			"type": "header",
+			"text": {
+				"type": "plain_text",
+				"text": "Explore the history of a file with git blame"
+			}
+		},
+		{
+			"type": "divider"
+		},
+		{
+			"type": "section",
+			"text": {
+				"type": "mrkdwn",
+				"text": "Git blame is a funny name for a serious way to track changes to a file, line-by-line and see who is responsible for each change.  Click 'blame' in the top bar while viewing any file in the repository to open a detailed, line-by-line summary of who changed each line and when.  It also lists the name of the commit and you can explore the history of the file further by clicking 'history'."
+			}
+		},
+		{
+			"type": "image",
+			"title": {
+				"type": "plain_text",
+				"text": "Blame button",
+				"emoji": true
+			},
+			"image_url": "https://docs.github.com/assets/images/help/repository/blame-button.png",
+			"alt_text": "blame button"
+		},
+		{
+			"type": "image",
+			"title": {
+				"type": "plain_text",
+				"text": "Blame view",
+				"emoji": true
+			},
+			"image_url": "https://docs.github.com/assets/images/help/repository/git_blame.png",
+			"alt_text": "blame view"
+		}
 	]
 }
