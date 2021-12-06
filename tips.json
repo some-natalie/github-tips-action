@@ -4,7 +4,7 @@
 			"type": "header",
 			"text": {
 				"type": "plain_text",
-				"text": ":open_file_folder: Finding Files in Repositories"
+				"text": ":open_file_folder: Finding files in repositories"
 			}
 		},
 		{
@@ -150,6 +150,56 @@
 			},
 			"image_url": "https://docs.github.com/assets/images/help/repository/git_blame.png",
 			"alt_text": "blame view"
+		}
+	],
+	"copy-raw-contents": [
+		{
+			"type": "header",
+			"text": {
+				"type": "plain_text",
+				"text": "Easily copy the raw contents of a file"
+			}
+		},
+		{
+			"type": "divider"
+		},
+		{
+			"type": "section",
+			"text": {
+				"type": "mrkdwn",
+				"text": "Quickly copy the raw contents of any file in a repository to your computer's clipboard by clicking the button titled 'Copy raw contents' while viewing the file. \n\n No longer do you have to open the raw file, select everything, then copy and paste!  (but you can if you want)"
+			}
+		},
+		{
+			"type": "image",
+			"image_url": "https://github.com/some-natalie/github-tips-action/blob/main/images/copy-raw-contents.png",
+			"alt_text": "Copy raw contents button"
+		}
+	],
+	"github-file-size-limits": [
+		{
+			"type": "header",
+			"text": {
+				"type": "plain_text",
+				"text": "File size limits in GitHub"
+			}
+		},
+		{
+			"type": "divider"
+		},
+		{
+			"type": "section",
+			"text": {
+				"type": "mrkdwn",
+				"text": "By default, GitHub will warn you when any individual file in your repository is larger than 50 MB and will block pushes if any file exceeds 100 MB.  If you need to version control large files, there's a couple options you can use:\n\n1. Use `git-lfs` to store the large files in your repository.  Learn more <https://docs.github.com/en/repositories/working-with-files/managing-large-files/about-git-large-file-storage|here>.\n\n2. Create a release instead, allowing you to distribute versioned binaries that correlate with the release.  Learn more <https://docs.github.com/en/repositories/working-with-files/managing-large-files/about-large-files-on-github#distributing-large-binaries|here>.\n\n3. Remove the large files from the repository.  Learn more <https://docs.github.com/en/repositories/working-with-files/managing-large-files/about-large-files-on-github#removing-files-from-a-repositorys-history|here>."
+			}
+		},
+		{
+			"type": "section",
+			"text": {
+				"type": "mrkdwn",
+				"text": ":information_source: If your team is using GitHub Enterprise Server (self-hosted), your enterprise administrator can change these limits.  More information <https://docs.github.com/en/enterprise-server/admin/guides/installation/setting-git-push-limits|here>."
+			}
 		}
 	]
 }
