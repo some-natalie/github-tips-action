@@ -19,7 +19,7 @@
 		},
 		{
 			"type": "image",
-			"image_url": "https://i1.wp.com/user-images.githubusercontent.com/121322/78818953-5105be00-798a-11ea-9f48-5626b0f7cb58.gif?ssl=1",
+			"image_url": "https://i1.wp.com/user-images.githubusercontent.com/121322/78818953-5105be00-798a-11ea-9f48-5626b0f7cb58.gif",
 			"alt_text": "Fuzzy file finder in action"
 		}
 	],
@@ -199,6 +199,51 @@
 			"text": {
 				"type": "mrkdwn",
 				"text": ":information_source: If your team is using GitHub Enterprise Server (self-hosted), your enterprise administrator can change these limits.  More information <https://docs.github.com/en/enterprise-server/admin/guides/installation/setting-git-push-limits|here>."
+			}
+		}
+	],
+	"git-aliases": [
+		{
+			"type": "header",
+			"text": {
+				"type": "plain_text",
+				"text": "Git aliases to simplify life"
+			}
+		},
+		{
+			"type": "divider"
+		},
+		{
+			"type": "section",
+			"text": {
+				"type": "mrkdwn",
+				"text": "Much like your favorite shell, git can use custom aliases to make your life simpler.  Here are a few that I have found that make life a little easier.\n\nSometimes it's too much to type out the entire word \"checkout\" or \"branch\" when you also have to type the name of the branch or any other arguments, so shortening things to type is quite welcome.\n\n```$ git config --global alias.co checkout\n$ git config --global alias.br branch\n$ git config --global alias.st status```"
+			}
+		},
+		{
+			"type": "section",
+			"text": {
+				"type": "mrkdwn",
+				"text": "The usefulness of aliases doesn't end there, though, as you can also define functions that you think _should_ exist, like this one that unstages a file for you:\n\n```$ git config --global alias.undo 'reset HEAD~1 --mixed'```\n\n"
+			}
+		}
+	],
+	"profile-readme": [
+		{
+			"type": "header",
+			"text": {
+				"type": "plain_text",
+				"text": "Profile Readmes"
+			}
+		},
+		{
+			"type": "divider"
+		},
+		{
+			"type": "section",
+			"text": {
+				"type": "mrkdwn",
+				"text": "Tell the world about yourself with a profile readme!  It's a special repository at `username/username` and the `README.md` in that repo will show up when anyone looks you up on GitHub.\n\nGitHub will display your profile README on your profile page if all of the following are true.\n- You've created a repository with a name that matches your GitHub username.\n- The repository is public.\n- The repository contains a file named README.md in its root.\n- The README.md file contains any content.\n\n<https://docs.github.com/en/account-and-profile/setting-up-and-managing-your-github-profile/customizing-your-profile/managing-your-profile-readme|Documentation>\n\n<https://github.com/abhisheknaiidu/awesome-github-profile-readme|A curated list of awesome examples>"
 			}
 		}
 	]
