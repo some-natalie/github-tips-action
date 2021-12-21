@@ -2,9 +2,8 @@ name: Post a random tip to Slack
 
 on: 
   workflow_dispatch:
-  push:
-    branches:
-    - main
+  # schedule:
+  #   - cron: "0 9 * * 1"  # This runs at 9 am UTC every Monday
 
 jobs:
   post-tip:
@@ -16,7 +15,7 @@ jobs:
 
       - name: Pick a random GitHub tip
         id: pick-tip
-        uses: some-natalie/github-tips-action@v0.0.1
+        uses: some-natalie/github-tips-action@v0.0.2
 
       - name: Send custom JSON data to Slack workflow
         id: slack
