@@ -172,7 +172,7 @@
 		},
 		{
 			"type": "image",
-			"image_url": "https://github.com/some-natalie/github-tips-action/blob/main/images/copy-raw-contents.png",
+			"image_url": "https://raw.githubusercontent.com/some-natalie/github-tips-action/main/images/copy-raw-contents.png",
 			"alt_text": "Copy raw contents button"
 		}
 	],
