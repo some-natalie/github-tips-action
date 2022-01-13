@@ -284,5 +284,29 @@
 				"text": "Head to https://github.com/explore to find cool new projects based on the people you follow, the repositories you've already starred and viewed, and topics you find interesting.  You can also check out what's <https://github.com/trending|trending> or find curated <https://github.com/collections|collections> to inspire your next project!"
 			}
 		}
+	],
+	"github-status": [
+		{
+			"type": "header",
+			"text": {
+				"type": "plain_text",
+				"text": "Check the status of GitHub"
+			}
+		},
+		{
+			"type": "divider"
+		},
+		{
+			"type": "section",
+			"text": {
+				"type": "mrkdwn",
+				"text": "The live status page at <https://www.githubstatus.com/|https://www.githubstatus.com/> displays the real-time status of GitHub, summarized by individual services.  Incidents (such as outages or degradations) are announced and updated there as well.\n\nIn the top-right corner of the site, there's a \"Subscribe\" button that provides push notifications or feeds via Twitter, email, SMS, RSS/atom feeds, and webhooks.  There are all sorts of integrations you can build off this."
+			}
+		},
+		{
+			"type": "image",
+			"image_url": "https://raw.githubusercontent.com/some-natalie/github-tips-action/main/images/github-status.png",
+			"alt_text": "GitHub status subscribe button"
+		}
 	]
 }
